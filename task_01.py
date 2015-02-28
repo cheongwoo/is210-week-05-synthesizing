@@ -20,8 +20,8 @@ def fahrenheit_to_celsius(degrees):
         >>> fahrenheit_to_celsius(95)
         35
     """
-    DEGREE = decimal.Decimal('{}'.format(degrees))
-    return decimal.Decimal('{}'.format((DEGREE - 32) * 5 / 9))
+    return decimal.Decimal('{}'.format((decimal.Decimal('{}'.format(degrees))
+                                        - 32) * 5 / 9))
 
 
 def celsius_to_kelvin(degrees):
